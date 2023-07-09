@@ -1,0 +1,433 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(212, 255, 0);
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: #000;
+}
+
+.header {
+  position: fixed;
+  z-index: 2000;
+  background-color: #fff;
+  top: 0px;
+  max-height: 128px;
+  width: 100%;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+.header__logo {
+  width: 215px;
+  height: auto;
+}
+.header__ul-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 930px;
+  height: 26px;
+}
+.header__a {
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  line-height: 16px;
+  color: black;
+}
+
+.presentation {
+  margin-top: 30px;
+}
+.presentation__top {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.presentation__me {
+  border-radius: 50px;
+  width: 284px;
+  height: auto;
+}
+.presentation__background {
+  width: 832px;
+  height: auto;
+}
+.presentation__bottom {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.presentation__left {
+  border-radius: 50px;
+  width: 384px;
+  height: auto;
+  margin-top: clamp(0.938rem, 0.697rem + 1.2vw, 1.75rem);
+}
+.presentation__center {
+  border-radius: 50px;
+  width: 690px;
+  height: auto;
+  margin: 48px 0px 30px 0px;
+}
+.presentation__right {
+  border-radius: 50px;
+  width: 249px;
+  height: auto;
+  margin-top: clamp(0.625rem, 0.384rem + 1.2vw, 1.438rem);
+}
+
+.about-me__h1 {
+  font-size: clamp(2.5rem, 2.056rem + 2.22vw, 4rem);
+  line-height: 16px;
+  width: auto;
+  height: 44px;
+  margin-top: clamp(0.313rem, -0.799rem + 5.56vw, 4.063rem);
+}
+.about-me__me {
+  max-width: auto;
+  height: auto;
+  margin-top: clamp(0.625rem, 0.347rem + 1.39vw, 1.563rem);
+  display: grid;
+  gap: 0px 0px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "one two";
+}
+@media (max-width: 991.98px) {
+  .about-me__me {
+    gap: 20px;
+    grid-template-areas: "one one" "two two";
+  }
+}
+.about-me__left {
+  max-width: auto;
+  height: auto;
+  grid-area: one;
+}
+.about-me__photo {
+  border-radius: 50px;
+  width: clamp(15.625rem, 10.44rem + 25.93vw, 33.125rem);
+  height: auto;
+}
+.about-me__right {
+  grid-area: two;
+  margin: auto;
+}
+.about-me__p {
+  font-size: clamp(0.75rem, 0.417rem + 1.67vw, 1.875rem);
+  line-height: clamp(2.5rem, 2.13rem + 1.85vw, 3.75rem);
+}
+
+.my-photo__header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  height: clamp(3.125rem, 0.921rem + 11.02vw, 10.563rem);
+  margin: auto;
+}
+.my-photo__h2 {
+  font-size: clamp(1.25rem, 0.731rem + 2.59vw, 3rem);
+  line-height: 80px;
+  margin: auto;
+}
+.my-photo__jop {
+  margin-top: 25px;
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.my-photo__left {
+  display: flex;
+  gap: 12px 0px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+.my-photo__mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+}
+.my-photo__right {
+  display: flex;
+  gap: 12px 0px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+.my-photo__wide {
+  width: 550px;
+  height: auto;
+}
+.my-photo__long {
+  width: 360px;
+  height: auto;
+}
+
+.my-video__header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  height: clamp(6.25rem, 5.88rem + 1.85vw, 7.5rem);
+  margin: auto;
+}
+.my-video__h2 {
+  font-size: clamp(1.25rem, 0.731rem + 2.59vw, 3rem);
+  line-height: 80px;
+  margin: auto;
+}
+.my-video__video {
+  width: 100%;
+  height: clamp(20rem, 14.352rem + 28.24vw, 39.063rem);
+}
+.my-video__vid {
+  max-width: clamp(20rem, 5.278rem + 73.61vw, 69.688rem);
+  max-height: auto;
+  margin: auto;
+}
+.my-video__name {
+  font-size: clamp(1.25rem, 0.731rem + 2.59vw, 3rem);
+  line-height: clamp(2.5rem, 1.759rem + 3.7vw, 5rem);
+  margin: auto;
+}
+.my-video__backstage {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  margin-top: clamp(0.938rem, 0.66rem + 1.39vw, 1.875rem);
+  margin-bottom: clamp(1.563rem, 1.1rem + 2.31vw, 3.125rem);
+}
+.my-video__a {
+  font-size: clamp(1.25rem, 0.731rem + 2.59vw, 3rem);
+  line-height: clamp(2.5rem, 1.759rem + 3.7vw, 5rem);
+  margin: auto;
+}
+
+.footer {
+  background-color: #fff;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.footer__icons {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-right: auto;
+  width: clamp(14.375rem, 12.708rem + 8.33vw, 20rem);
+}
+.footer__icon {
+  width: clamp(1.25rem, 0.194rem + 5.28vw, 4.813rem);
+  height: clamp(1.25rem, 0.194rem + 5.28vw, 4.813rem);
+}
+.footer__last-logo {
+  width: clamp(15.625rem, 11.162rem + 22.31vw, 30.688rem);
+  height: auto;
+}
+.footer__mail {
+  margin-left: auto;
+  margin-right: 0em;
+  font-family: "Rubik Wet Paint";
+  color: #000;
+  font-size: clamp(0.438rem, 0.012rem + 2.13vw, 1.875rem);
+  line-height: 16px;
+}
+.footer__end {
+  max-width: 645px;
+  height: auto;
+  margin: auto;
+}
+.footer__text {
+  font-family: "Rubik Wet Paint";
+  font-size: clamp(1.25rem, 0.88rem + 1.85vw, 2.5rem);
+  line-height: 16px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.portfolio-photo__header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  height: clamp(3.125rem, 0.921rem + 11.02vw, 10.563rem);
+  margin: auto;
+}
+.portfolio-photo__h2 {
+  font-size: clamp(1.25rem, 0.731rem + 2.59vw, 3rem);
+  line-height: 80px;
+  margin: auto;
+}
+.portfolio-photo__jop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+.portfolio-photo__column {
+  flex: 25%;
+  padding: 0 4px;
+  text-align: center;
+}
+.portfolio-photo__photo {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.services__name {
+  font-size: clamp(0.938rem, 0.326rem + 3.06vw, 3rem);
+  line-height: clamp(2.5rem, 1.759rem + 3.7vw, 5rem);
+  margin: auto;
+}
+
+.contacts {
+  margin-top: 30px;
+}
+.contacts__number {
+  width: clamp(9.375rem, 4.745rem + 23.15vw, 25rem);
+  height: auto;
+  background-color: yellow;
+  text-align: center;
+  border-radius: 50px;
+  margin: auto;
+}
+.contacts__contact {
+  display: flex;
+  justify-content: space-around;
+}
+.contacts__h2 {
+  font-size: clamp(1.25rem, 0.731rem + 2.59vw, 3rem);
+  line-height: 80px;
+  margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Ubuntu Condensed";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  padding-top: clamp(0rem, -2.37rem + 11.85vw, 8rem);
+  flex: 1 1 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1430px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  min-height: 100%;
+  padding: 0px 15px;
+}
+
+@font-face {
+  font-family: "Ubuntu Condensed";
+  src: url("../font/UbuntuCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: "Rubik Wet Paint";
+  src: url("../font/RubikWetPaint-Regular.ttf");
+}

@@ -1,0 +1,7 @@
+.services {
+    &__name {
+        font-size: clamp(0.938rem, calc(0.326rem + 3.06vw), 3rem);  //48
+        line-height: clamp(2.5rem, calc(1.759rem + 3.7vw), 5rem); //80
+        margin: auto;
+    }
+}

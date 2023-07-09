@@ -1,0 +1,30 @@
+.portfolio-photo {
+    &__header {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        height: clamp(3.125rem, calc(0.921rem + 11.02vw), 10.563rem); //169  
+        margin: auto;
+    }
+    &__h2 {
+        font-size: clamp(1.25rem, calc(0.731rem + 2.59vw), 3rem); //48
+        line-height: 80px;
+        margin: auto;
+    }
+    &__jop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 4px;
+    }
+    &__column {
+        flex: 25%; 
+        padding: 0 4px;
+        text-align: center;
+    }
+    &__photo {
+        margin-top: 8px;
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,51 @@
+@import "_nullstyle.scss";
+@import "_header.scss";
+@import "_presentation.scss";
+@import "_about.scss";
+@import "_photo.scss";
+@import "_my-video.scss";
+@import "_footer.scss";
+@import "_portfolio-photo.scss";
+@import "_services.scss";
+@import "_contact.scss";
+
+html {
+    scroll-behavior: smooth;  
+}
+body {
+    font-family: 'Ubuntu Condensed';
+    font-style: normal;
+    font-weight: 400;   
+}
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+main {
+    padding-top: clamp(0rem, calc(-2.37rem + 11.85vw), 8rem);  //128px;
+    flex: 1 1 auto;
+}
+img { 
+    max-width: 100%; 
+    }
+.container {
+    max-width: 1430px;
+    margin: 0 auto;
+    overflow-x: hidden; 
+    min-height: 100%;
+    padding: 0px 15px;
+}
+
+@font-face {
+	font-family: 'Ubuntu Condensed';
+	src: url('../font/UbuntuCondensed-Regular.ttf'); 
+}
+@font-face {
+	font-family: 'Rubik Wet Paint';
+	src: url('../font/RubikWetPaint-Regular.ttf'); 
+}
+
+
+

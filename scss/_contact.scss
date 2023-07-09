@@ -1,0 +1,21 @@
+.contacts{
+    margin-top: 30px;
+    &__number{
+        width: clamp(9.375rem, calc(4.745rem + 23.15vw), 25rem);
+        height: auto;
+        background-color: yellow;
+        text-align: center;
+        border-radius: 50px;
+        margin: auto;
+    }
+    &__contact {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__h2 {
+        font-size: clamp(1.25rem, calc(0.731rem + 2.59vw), 3rem); //48
+        line-height: 80px;
+        margin: auto;
+    }
+}
+

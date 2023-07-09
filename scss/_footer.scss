@@ -1,0 +1,48 @@
+.footer{
+    background-color: #fff;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 25px;
+        margin-right: auto;
+        width: clamp(14.375rem, calc(12.708rem + 8.33vw), 20rem);  //300       360
+    }
+    &__icon {
+        width: clamp(1.25rem, calc(0.194rem + 5.28vw), 4.813rem); //77
+        height: clamp(1.25rem, calc(0.194rem + 5.28vw), 4.813rem);
+    }
+    &__last-logo {
+        width: clamp(15.625rem, calc(11.162rem + 22.31vw), 30.688rem);
+        height: auto;
+    }
+
+    &__mail {
+        margin-left: auto;
+        margin-right: 0em;
+        font-family: 'Rubik Wet Paint';
+        color: #000;
+        font-size: clamp(0.438rem, calc(0.012rem + 2.13vw), 1.875rem); //30
+        line-height: 16px;
+    }
+    &__end {
+        max-width: 645px;
+        height: auto;   
+        margin: auto;   
+    }
+    &__text {
+        font-family: 'Rubik Wet Paint';
+        font-size: clamp(1.25rem, calc(0.88rem + 1.85vw), 2.5rem); //40
+        line-height: 16px;
+        text-align: center; 
+        padding-bottom: 50px;
+    }
+}

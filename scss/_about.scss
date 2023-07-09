@@ -1,0 +1,43 @@
+.about-me {
+    &__h1 {
+        font-size: clamp(2.5rem, calc(2.056rem + 2.22vw), 4rem);  //64
+        line-height: 16px;
+        width: auto;
+        height: 44px;
+        margin-top: clamp(0.313rem, calc(-0.799rem + 5.56vw), 4.063rem); //65
+    }
+    &__me {
+        max-width: auto;
+        height: auto;
+        margin-top: clamp(0.625rem, calc(0.347rem + 1.39vw), 1.563rem); //25
+        display: grid;
+        gap: 0px 0px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "one two";    
+    }
+    @media (max-width: 991.98px) {
+        &__me {
+            gap: 20px;
+            grid-template-areas: "one one" "two two";      
+        }
+    }
+
+    &__left {
+        max-width: auto;
+        height: auto;    
+        grid-area: one;
+    }
+    &__photo{
+        border-radius: 50px;
+        width: clamp(15.625rem, calc(10.44rem + 25.93vw), 33.125rem);
+        height: auto;
+    }
+    &__right {
+        grid-area: two;
+        margin: auto;
+    }
+    &__p {
+        font-size: clamp(0.75rem, calc(0.417rem + 1.67vw), 1.875rem); // 37  было я сделал 30
+        line-height: clamp(2.5rem, calc(2.13rem + 1.85vw), 3.75rem);    //60px
+    }
+}
